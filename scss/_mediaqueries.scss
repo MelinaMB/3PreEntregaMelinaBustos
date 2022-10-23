@@ -38,8 +38,8 @@
         margin: 40px;
     }
     
-    .img2 img{
-        width: 100%;
+    .img2 {
+        img {width: 100%;} 
     }
    
     /* footer */
@@ -53,6 +53,13 @@
         font-size: 1.5em;
         margin: 10px 0 0 0;
         justify-content: normal;
+
+        section {
+
+            div {
+                margin: 10px;
+            }
+        }
     }
 
     .logofooter {
@@ -64,6 +71,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        
     }
     .redessociales {
         grid-area: redessociales;

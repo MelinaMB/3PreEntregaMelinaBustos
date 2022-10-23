@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
+    "build-css": "node-sass --include-path scss scss/style.scss css/stylecss.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "",
@@ -243,5 +243,13 @@
     "spdx-license-ids": "^3.0.12",
     "y18n": "^5.0.8"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelinaMB/3PreEntregaMelinaBustos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MelinaMB/3PreEntregaMelinaBustos/issues"
+  },
+  "homepage": "https://github.com/MelinaMB/3PreEntregaMelinaBustos#readme",
   "description": ""
 }

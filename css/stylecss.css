@@ -1,4 +1,8 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
 /* nav */
 .imglogo {
   justify-content: center;
@@ -14,7 +18,8 @@ li {
   padding: 8px;
   grid-area: main; }
 
-.img1, .img2 {
+.img1,
+.img2 {
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -99,38 +104,47 @@ h4 {
 @media screen and (min-width: 768px) {
   .contenedor {
     display: grid;
-    grid-template-areas: "nav" "main" "footer"; }
+    grid-template-areas: "nav"
+ "main"
+ "footer"; }
   .imglogo {
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center; }
+    
   h1 {
     color: #e63333;
     margin: 10px;
     font-family: 'Abril Fatface', cursive, sans-serif; }
+
   /* main */
   .img1 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     font-size: 1em; }
+
   .img2 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     font-size: 1em;
     margin: 40px; }
+
   .img2 img {
     width: 100%; }
   /* footer */
   footer {
     grid-area: footer;
     display: grid;
-    grid-template-areas: "logofooter contacto" "logofooter redessociales";
+    grid-template-areas: "logofooter contacto"
+ "logofooter redessociales";
     font-size: 1.5em;
     margin: 10px 0 0 0;
     justify-content: normal; }
+    footer section div {
+      margin: 10px; }
   .logofooter {
     grid-area: logofooter; }
   .contacto {
