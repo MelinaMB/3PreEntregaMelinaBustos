@@ -8,11 +8,6 @@
   justify-content: center;
   text-align: center; }
 
-li {
-  list-style-type: none; }
-  li a {
-    text-decoration: none; }
-
 /* main */
 .main {
   padding: 8px;
@@ -32,7 +27,7 @@ li {
   width: 60%; }
 
 .img1 h3, .img2 h3 {
-  color: black; }
+  color: #000000; }
 
 /* footer */
 footer {
@@ -67,7 +62,7 @@ footer {
 /*···················· pagina micuenta······················· */
 /* main */
 .micuenta {
-  background-image: url(img/micuenta.jpg);
+  background-image: url(../img/micuenta.jpg);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,42 +99,39 @@ h4 {
 @media screen and (min-width: 768px) {
   .contenedor {
     display: grid;
-    grid-template-areas: "nav"
- "main"
- "footer"; }
+    grid-template-areas: "nav" "main" "footer"; }
+    .contenedor a {
+      text-decoration: none; }
   .imglogo {
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center; }
-    
   h1 {
     color: #e63333;
     margin: 10px;
     font-family: 'Abril Fatface', cursive, sans-serif; }
-
   /* main */
   .img1 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     font-size: 1em; }
-
+    .img1 img {
+      width: 100%; }
   .img2 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     font-size: 1em;
     margin: 40px; }
-
-  .img2 img {
-    width: 100%; }
+    .img2 img {
+      width: 90%; }
   /* footer */
   footer {
     grid-area: footer;
     display: grid;
-    grid-template-areas: "logofooter contacto"
- "logofooter redessociales";
+    grid-template-areas: "logofooter contacto" "logofooter redessociales";
     font-size: 1.5em;
     margin: 10px 0 0 0;
     justify-content: normal; }
@@ -151,7 +143,7 @@ h4 {
     grid-area: contacto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-evenly; }
   .redessociales {
     grid-area: redessociales;
     display: flex;
@@ -163,8 +155,6 @@ h4 {
     justify-content: space-evenly;
     align-items: center;
     margin: 10px; }
-  li {
-    list-style-type: none; }
   /* ···················pagina contacto···················· */
   /* ·····main····· */
   .formularioemp {
@@ -193,7 +183,7 @@ h4 {
   /*···················· pagina micuenta······················· */
   /* main */
   .micuenta {
-    background-image: url(img/micuenta.jpg);
+    background-image: url(../img/micuenta.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
