@@ -7,7 +7,7 @@ a {
 .main {
     padding: 8px;
     grid-area: main;
-    
+
 }
 
 .img1,
@@ -18,7 +18,7 @@ a {
     font-size: 2em;
 }
 
-.img1{
+.img1 {
     img {
 
         width: 100%;
@@ -32,8 +32,9 @@ a {
     }
 }
 
-.img1, .img2 {
+.img1,
+.img2 {
     h3 {
         color: $color-secundario;
-    }   
+    }
 }
