@@ -9,17 +9,18 @@
             "footer"
         ;
     }
+
     /*mixin*/
     @mixin flex ($direccion, $justificado, $alineacion) {
-    flex-direction: $direccion;
-    justify-content: $justificado;
-    align-items: $alineacion;
-}
+        flex-direction: $direccion;
+        justify-content: $justificado;
+        align-items: $alineacion;
+    }
 
     .imglogo {
         display: flex;
         @include flex(row, left, center);
-        
+
     }
 
     h1 {
@@ -33,25 +34,27 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        font-size: 1em; 
-       
+        font-size: 1em;
+
     }
+
     /* extend*/
     .img1 {
         @extend .imagen;
-        
+
     }
 
     .img2 {
         @extend .imagen;
         margin: 40px;
+
         img {
             width: 100%;
         }
-        
+
     }
-    
-    
+
+
     /* footer */
     footer {
         grid-area: footer;
@@ -80,21 +83,25 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        
+
     }
+
     .redessociales {
         grid-area: redessociales;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
+
     .redes {
         display: flex;
         @include flex (row, space-evenly, center);
         margin: 10px;
     }
-   
- 
+
+    /*.................. pagina contacto.............*/
+    
+
     /* ················pagina empresa················ */
     /* main */
     .logomainempresa {
@@ -114,11 +121,13 @@
         font-size: 2em;
         margin: $marging;
     }
+
     .imgproducto {
         flex-direction: row;
         justify-content: center;
         margin: $marging;
     }
+
     /*···················· pagina micuenta······················· */
 
     /* main */
@@ -132,6 +141,7 @@
         font-family: 'Abril Fatface', cursive, sans-serif;
         font-size: $spacing;
     }
+
     h4 {
         display: block;
         margin-block-start: 0px;
@@ -140,6 +150,7 @@
         margin-inline-end: 0px;
         font-weight: bold;
     }
+
     .accederregistro {
         display: flex;
         @include flex(row, space-between, center);
@@ -147,16 +158,14 @@
         margin: 0;
         font-size: 1em;
     }
-    .acceder {
-        width: 45%;
-    }
-    .registro {
-        width: 45%;
+
+    .registroacceder {
+        width: $width;
     }
 }
 
 @media screen and (min-width: 0px) and (max-width: 1199px) {
-    .flip-card-back{
+    .flip-card-back {
         content-visibility: hidden;
     }
 
@@ -167,36 +176,39 @@
         background-color: transparent;
         width: $spacing*6;
         height: $spacing*4;
-      }
-      .flip-card2 {
+    }
+
+    .flip-card2 {
         background-color: transparent;
         width: $spacing*3;
         height: $spacing*4;
-      }
+    }
 
-      .flip-card-inner {
+    .flip-card-inner {
         position: relative;
         text-align: center;
         transition: transform 0.8s;
         transform-style: preserve-3d;
-      }
-      .flip-card2:hover .flip-card-inner {
+    }
+
+    .flip-card2:hover .flip-card-inner {
         transform: rotateY(180deg);
-      }
-      
-      .flip-card:hover .flip-card-inner {
+    }
+
+    .flip-card:hover .flip-card-inner {
         transform: rotateY(180deg);
-      }
-      
-      .flip-card-front, .flip-card-back {
+    }
+
+    .flip-card-front,
+    .flip-card-back {
         position: absolute;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-      }
-     
-      .flip-card-back {
+    }
+
+    .flip-card-back {
         transform: rotateY(180deg);
-      }
-      
-      
+    }
+
+
 }
