@@ -1,15 +1,11 @@
 /* ··········pagina productos············· */
 
-.listaproductos {
-    display: flex;
-    position: fixed;
-    left: 2%;
-    font-size: 1em;
-    flex-direction: row;
-}
-
-
 .imgproducto {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    img {
+        margin: 30px;
+    }
+   
 }
